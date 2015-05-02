@@ -6,7 +6,7 @@
     (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
         (normal-top-level-add-subdirs-to-load-path))))
 
-;; We recompile every .elc
+;; Recompile every .elc
 (byte-recompile-directory ".emacs.d/elpa" 0)
 
 ;; Customization
@@ -22,6 +22,7 @@
 (show-paren-mode t)
 (blink-cursor-mode 0)
 (display-time-mode)
+(column-number-mode)
 
 ;; tramp
 (require 'tramp)
