@@ -1,9 +1,5 @@
 ;; Customization
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(debug-on-error t)
  '(doc-view-continuous t)
  '(global-linum-mode 1)
@@ -51,13 +47,6 @@
 ;; If we are not in fullscreen mode, we toggle fullscreen
 ;; (when (not (frame-parameter nil 'fullscreen))
 ;;   (toggle-fullscreen))
-
-;; reload .emacs
-(defun reload-dotemacs ()
-  (interactive)
-  (load-file "~/.emacs"))
-
-(global-set-key (kbd "C-c r") 'reload-dotemacs) ; r as reload
 
 ;; Modes
 (setq auto-mode-alist (append 
@@ -166,16 +155,8 @@
 (require 'flex-mode)
 (require 'spl)
 
-
 ;; My packages
 (require 'lambda-mode)
 (require 'greek-mode)
 (require 'auto-close-mode)
 (require 'brainfuck-mode)
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
