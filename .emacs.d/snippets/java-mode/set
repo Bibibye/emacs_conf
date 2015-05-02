@@ -1,0 +1,8 @@
+# name: set...
+# key: set
+# --
+private ${1:Type} ${2:VariableName};
+
+public void set${2:$(capitalize text)}($1 $2){
+    this.$2 = $2;
+}

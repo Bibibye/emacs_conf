@@ -1,0 +1,8 @@
+# name: class ... {...}
+# key: class
+# --
+class ${1:ClassName} {
+    public $1(${2:ConstructorArgs}){
+	$0
+    }
+}

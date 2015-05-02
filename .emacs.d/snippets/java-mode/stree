@@ -1,0 +1,17 @@
+# name: stree ... {...}
+# key: stree
+# --
+package stree;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import stree.*;
+
+public class ${1:ClassName} extends Stree {
+
+       public $1(${2:ConstructorArgs}){
+       	      super(EnumTag.${3:Tag}, ${4:SuperArgs});
+	}
+
+}

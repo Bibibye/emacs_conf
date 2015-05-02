@@ -1,0 +1,18 @@
+# name: #include std_header_files
+# key: std
+# --
+#include <assert.h>
+#include <ctype.h>
+#include <errno.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#if (defined __STDC_VERSION__) \
+    && (__STDC_VERSION__ >= 199901)
+#include <stdbool.h>
+#include <stdint.h>
+#endif

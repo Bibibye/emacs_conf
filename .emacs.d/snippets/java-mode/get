@@ -1,0 +1,8 @@
+# name: get...
+# key: get
+# --
+private ${1:Type} ${2:VariableName};
+
+public $1 get${2:$(capitalize text)}(){
+    return $2;
+}
