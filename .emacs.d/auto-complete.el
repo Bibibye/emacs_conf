@@ -41,7 +41,7 @@
 
 ;;; Code:
 
-
+
 
 (eval-when-compile
   (require 'cl))
@@ -57,7 +57,7 @@
     (auto-complete-mode -1)
     var))
 
-
+
 
 ;;;; Customization
 
@@ -263,7 +263,7 @@ a prefix doen't contain any upper case letters."
 (defvar auto-complete-mode-hook nil
   "Hook for `auto-complete-mode'.")
 
-
+
 
 ;;;; Internal variables
 
@@ -544,7 +544,7 @@ If there is no common part, this will be nil.")
       (pp (ac-comphist-serialize ac-comphist) (current-buffer))
       (write-region (point-min) (point-max) ac-comphist-file))))
 
-
+
 
 ;;;; Auto completion internals
 
