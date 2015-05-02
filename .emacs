@@ -1,3 +1,14 @@
+; Add recursively ~/.emacs.d and its content to load-path
+(let* ((dir (expand-file-name user-emacs-directory))
+       (default-directory dir))
+  (when (file-directory-p dir)
+    (add-to-list 'load-path dir t)
+    (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
+        (normal-top-level-add-subdirs-to-load-path))))
+
+;; We recompile every .elc
+(byte-recompile-directory ".emacs.d/elpa" 0)
+
 ;; Customization
 (custom-set-variables
  '(debug-on-error t)
@@ -70,7 +81,6 @@
 			 ("\\.md\\'" . markdown-mode)
 			 )
 		       auto-mode-alist))
-
 ;; Python
 (setq py-python-command "python3")
 
@@ -82,14 +92,6 @@
 (global-set-key (kbd "C-c C-k") 'prolog-compile-buffer)
 
 ;; Packages
-
-; Add recursively ~/.emacs.d and its content to load-path
-(let* ((dir (expand-file-name user-emacs-directory))
-       (default-directory dir))
-  (when (file-directory-p dir)
-    (add-to-list 'load-path dir t)
-    (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
-        (normal-top-level-add-subdirs-to-load-path))))
 
 ;; YASnippet
 (require 'yasnippet)
