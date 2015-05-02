@@ -92,6 +92,9 @@
 (setq prolog-system 'swi)
 (global-set-key (kbd "C-c C-k") 'prolog-compile-buffer)
 
+;; Rust (from https://github.com/toshok/rust-mode)
+(require 'rust-mode)
+
 ;; Packages
 
 ;; YASnippet
