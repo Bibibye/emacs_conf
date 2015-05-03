@@ -11,6 +11,7 @@ The following packages must be installed :
 - lua-mode (Lua)
 - prolog-el (Prolog)
 - swi-prolog (Prolog)
+- haskell-mode (Haskell)
 
 If you want to use this emacs configuration on your computer :
 

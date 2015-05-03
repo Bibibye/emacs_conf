@@ -80,6 +80,7 @@
 			 ("\\.hpp\\'" . c++-mode)
 			 ("\\.h\\'" . c++-mode)
 			 ("\\.md\\'" . markdown-mode)
+			 ("\\.hs\\'" . haskell-mode)
 			 )
 		       auto-mode-alist))
 ;; Python
