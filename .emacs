@@ -93,6 +93,10 @@
 (setq prolog-system 'swi)
 (global-set-key (kbd "C-c C-k") 'prolog-compile-buffer)
 
+;; Haskell
+(custom-set-variables
+     '(haskell-mode-hook '(turn-on-haskell-indentation)))
+
 ;; Rust (from https://github.com/toshok/rust-mode)
 (require 'rust-mode)
 
