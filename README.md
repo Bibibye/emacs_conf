@@ -19,4 +19,4 @@ If you want to use this emacs configuration on your computer :
 - `cd` to your local copy
 - `make install`
 
-Be carefull, this operation will erase your previous configuration.
+Be careful, this operation will erase your previous configuration.
