@@ -161,6 +161,12 @@
 (setq ac-source-yasnippet nil)
 (global-auto-complete-mode t)
 
+;; emms (see https://www.gnu.org/software/emms/quickstart.html)
+(add-to-list 'load-path "~/.emacs.d/emms/lisp")
+(require 'emms-setup)
+(emms-standard)
+(emms-default-players)
+
 ;; Column marker
 ;; 80 characters rule
 (require 'column-marker)

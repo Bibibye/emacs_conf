@@ -1,6 +1,6 @@
 PWD=$(shell pwd)
 
-install:
+install: emms
 	@echo "The following action will overwrite your .emacs.d directory and your .emacs file"
 	@echo "Do you want to continue ? (y/N)"
 	@read CONFIRM && \
@@ -16,7 +16,7 @@ install:
 	esac
 
 
-link:
+link: emms
 	@echo "The following action will overwrite your .emacs.d directory and your .emacs file"
 	@echo "Do you want to continue ? (y/N)"
 	@read CONFIRM && \
@@ -30,6 +30,9 @@ link:
 			echo "[Done]";; \
 		*) echo "[Aborted]";; \
 	esac
+
+emms:
+	cd .emacs.d/emms/ && make && cd ../..
 
 clean:
 	find -name "*~" -delete
