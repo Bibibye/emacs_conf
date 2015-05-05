@@ -436,7 +436,7 @@
 	    ((:url . "http://elpa.gnu.org/packages/omn-mode.html")
 	     (:keywords))])
  (org .
-      [(20150427)
+      [(20150504)
        nil "Outline-based notes management and organizer" tar nil])
  (osc .
       [(0 1)
@@ -509,7 +509,7 @@
 	   ((:keywords "games")
 	    (:url . "http://elpa.gnu.org/packages/sokoban.html"))])
  (spinner .
-	  [(1 3)
+	  [(1 3 1)
 	   nil "Add spinners and progress-bars to the mode-line for ongoing operations" single
 	   ((:url . "https://github.com/Malabarba/spinner.el")
 	    (:keywords "processes" "mode-line"))])
@@ -530,7 +530,7 @@
 	     ((:url . "http://elpa.gnu.org/packages/svg-clock.html")
 	      (:keywords "demo" "svg" "clock"))])
  (swiper .
-	 [(0 3 0)
+	 [(0 4 0)
 	  ((emacs
 	    (24 1)))
 	  "Isearch with an overview. Oh, man!" tar
