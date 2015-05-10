@@ -106,6 +106,13 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 (setq org-agenda-files (file-expand-wildcards "~/org/*.org"))
+(setq org-todo-keywords
+      '((sequence "TODO" "STARTED" "|" "DONE" "CANCELED")))
+(setq org-todo-keyword-faces
+      '(("TODO" . org-warning)
+	("STARTED" . "yellow")
+	("CANCELED" . "light blue")))
+
 
 ;; Packages
 
