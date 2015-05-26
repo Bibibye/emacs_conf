@@ -1,6 +1,6 @@
 ;;; tex.el --- Support for TeX documents.
 
-;; Copyright (C) 1985-1987, 1991, 1993-2014 Free Software Foundation, Inc.
+;; Copyright (C) 1985-1987, 1991, 1993-2015 Free Software Foundation, Inc.
 
 ;; Maintainer: auctex-devel@gnu.org
 ;; Keywords: tex
@@ -1234,7 +1234,7 @@ restarting Emacs."
      (string :tag "Name")
      (choice
       (group :tag "Command" (string :tag "Command"))
-      (group :tag "Command parts"
+      (group :inline t :tag "Command parts"
 	     (repeat
 	      :tag "Command parts"
 	      (choice
@@ -2349,7 +2349,7 @@ If REGEXP is nil, or \"\", an error will occur."
 
 (defun TeX-tree-expand (vars program &optional subdirs)
   "Return directories corresponding to the kpathsea variables VARS.
-This is done calling `kpsewhich --expand-path' for each variable.
+This is done calling `kpsewhich --expand-path' for the variables.
 PROGRAM is passed as the parameter for --progname.  SUBDIRS are
 subdirectories which are appended to the directories of the TeX
 trees.  Only existing directories are returned."
@@ -4463,15 +4463,15 @@ element to ALIST-VAR."
 
 (progn ; Define TeX-mode-syntax-table.
   (modify-syntax-entry (string-to-char TeX-esc)
-			   "\\" TeX-mode-syntax-table)
+		       "\\" TeX-mode-syntax-table)
   (modify-syntax-entry ?\f ">"  TeX-mode-syntax-table)
   (modify-syntax-entry ?\n ">"  TeX-mode-syntax-table)
   (modify-syntax-entry (string-to-char TeX-grop)
-			   (concat "(" TeX-grcl)
-				TeX-mode-syntax-table)
+		       (concat "(" TeX-grcl)
+		       TeX-mode-syntax-table)
   (modify-syntax-entry (string-to-char TeX-grcl)
-			   (concat ")" TeX-grop)
-				TeX-mode-syntax-table)
+		       (concat ")" TeX-grop)
+		       TeX-mode-syntax-table)
   (modify-syntax-entry ?%  "<"  TeX-mode-syntax-table)
   (modify-syntax-entry ?\" "."  TeX-mode-syntax-table)
   (modify-syntax-entry ?&  "."  TeX-mode-syntax-table)
@@ -4481,7 +4481,8 @@ element to ALIST-VAR."
   (modify-syntax-entry ?$  "$"  TeX-mode-syntax-table)
   (modify-syntax-entry ?'  "w"  TeX-mode-syntax-table)
   (modify-syntax-entry ?«  "."  TeX-mode-syntax-table)
-  (modify-syntax-entry ?»  "."  TeX-mode-syntax-table))
+  (modify-syntax-entry ?»  "."  TeX-mode-syntax-table)
+  (modify-syntax-entry ?|  "$"  TeX-mode-syntax-table))
 
 ;;; Menu Support
 

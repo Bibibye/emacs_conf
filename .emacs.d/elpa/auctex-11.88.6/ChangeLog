@@ -1,3 +1,43 @@
+2015-05-08  Tassilo Horn  <tsdh@gnu.org>
+
+	Release auctex 11.88.6
+
+	* Version 11.88.6 released.
+
+2015-05-08  Tassilo Horn  <tsdh@gnu.org>
+
+	Merge branch 'master' into elpa
+
+2015-05-08  Tassilo Horn  <tsdh@gnu.org>
+
+	Fix TeX-tree-expand docstring
+
+	(TeX-tree-expand): Fix docstring.
+
+2015-05-08  Tassilo Horn  <tsdh@gnu.org>
+
+	Merge branch 'master' into elpa
+
+2015-05-08  Tassilo Horn  <tsdh@gnu.org>
+
+	Use paired delimiter syntax for |.
+
+	* tex.el (TeX-mode-syntax-table): Use paired delimiter syntax for 
+	character |.
+
+2015-05-07  Mosè Giordano  <mose@gnu.org>
+
+	[Fix #20513] Fix type of TeX-view-program-list.
+
+	* tex.el: Update copyright years.
+	(TeX-view-program-list): Fix type.  (Bug#20513)
+
+2015-05-05  Mosè Giordano  <mose@gnu.org>
+
+	Fix in italian.el style file.
+
+	* style/italian.el: Evaluate `TeX-quote-after-quote'.
+
 2015-05-01  Tassilo Horn  <tsdh@gnu.org>
 
 	Release GNU AUCTeX 11.88.5
