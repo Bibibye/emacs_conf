@@ -7,7 +7,7 @@
         (normal-top-level-add-subdirs-to-load-path))))
 
 ;; Recompile every .elc
-(byte-recompile-directory ".emacs.d/elpa" 0)
+(byte-recompile-directory "~/.emacs.d/elpa" 0)
 
 ;; Customization
 (custom-set-variables
