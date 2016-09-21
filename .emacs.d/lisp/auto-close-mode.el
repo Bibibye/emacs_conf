@@ -78,9 +78,7 @@
   (list 
    'c-mode-common-hook
    'lisp-mode-hook
-   'emacs-lisp-mode-hook
-   'tuareg-mode-hook
-   'coq-mode-hook)
+   'emacs-lisp-mode-hook)
   "List of major modes where auto-close-mode is enable by default")
 
 (defun auto-close-autoload ()

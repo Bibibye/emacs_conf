@@ -1,3 +1,7 @@
+; circumflex
+(load-library "iso-transl")
+(define-key function-key-map dead-circumflex 'compose-circumflex-map)
+
 ; Add recursively ~/.emacs.d and its content to load-path
 (let* ((dir (expand-file-name user-emacs-directory))
        (default-directory dir))
